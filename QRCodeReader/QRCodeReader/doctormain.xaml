@@ -1,0 +1,26 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="QRCodeReader.doctormain"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <HyperlinkButton x:Name="button" Content="Overall doctor's &#xD;&#xA;records" HorizontalAlignment="Left" Margin="-22,1,0,0" VerticalAlignment="Top" Height="205" Width="264" Click="button_Click" Foreground="#FFAE1515" Background="White"/>
+        <HyperlinkButton x:Name="button1" Content="Patient &#xD;&#xA;records" HorizontalAlignment="Left" Margin="216,1,-22,0" VerticalAlignment="Top" Height="205" Width="286" Click="button1_Click" Background="White" Foreground="#FFB41D1D"/>
+        <HyperlinkButton x:Name="button2" Content="Prescribe" HorizontalAlignment="Left" Margin="-22,172,-22,0" VerticalAlignment="Top" Height="406" Width="524" Click="button2_Click" Foreground="#FFB81010" Background="White"/>
+        <HyperlinkButton x:Name="button3" Content="Logout" HorizontalAlignment="Left" Margin="-22,666,-22,0" VerticalAlignment="Top" Height="102" Width="524" Click="button3_Click" Background="White" Foreground="#FFD11A1A"/>
+        <HyperlinkButton Content="Change Password" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-22,578,-22,0" Width="524" Height="88" Click="HyperlinkButton_Click" Background="White" Foreground="#FFD40F0F"/>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>

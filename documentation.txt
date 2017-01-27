@@ -1,0 +1,67 @@
+PRESCRIBE APP DOCUMENTATION
+----------------------------
+
+Prescribe is a Windows 8.0 phone Aadhar based online prescription app,which completely eliminates
+the need for papaer based prescriptions.Unlike accessing database directly from app,Prescribe uses
+server side PHP scripting on Microsoft Azure,which secures the process.
+The app boasts o two interfaces,one for each doctor and patient.Each one has its own registration portal
+which can be accessed only by Aadhar Card,making system genuine and user friendly.
+For additional security purposes,it has a passcode security system.
+
+IN APP DESCRIPTION
+------------------
+
+The Doctor Interface
+---------------------
+
+It is presented with 5 options upon login
+1)Overall Doc's record:to view prescriptions of the said Doctor.
+2)Patient REcord:to view the patient's prescription history.
+3)Prescribe:A portal which allows the doctor to prescribe a prescription. 
+4)Change Password:Allows the user to change the password
+5)Logout:Allows the user to logout
+
+->Search and sort facility:
+------------------------
+It allows the doctor to search a given prescription based on i)patient name,ii)diagnosis,
+iii)symptoms.
+Sort is implemented by i)date ii)prescription rating.
+The app introduces a star rating system,in which patients rate a doctor's prescription,which in turn
+enables the doctor to access prescription feedback from the patients.
+
+->Overall Doctor's record:
+--------------------------
+->It gives way to an interface which conatins all of the doctor's previous prescriptions,which are sorted 
+by date by default.Sort and search facility is implemented here.
+->Once we click a prescription,we see an interface which is based upon a standard doctor prescription,containing
+symptoms,diagnosis,medication,tests,comments and the name of the patient along with the date.
+->There is also an option to extend the prescription of the given patient,according to the doctor's will.
+
+->Prescribe:
+------------
+This contains a QR scanner which scans the Aadhar card of the patient,therby enabling the doctor to prescribe
+the patient.It gives way to an interactive interface which allows the doctor to fill in the prescription,and then send it 
+to the patient,via an online cloud based storage system(Azure) using PHP scripts.
+
+
+
+The Patient Interface
+------------------------
+
+The patient needs to scan his aadhar card to enter the app.He/She can view thier previous history,prevoius doctors,
+through a search and sort based system.The patient can also give feedback to a given prescription.
+
+There is also an option to call the doctor by clicking on a doctor's name in the MyDoctor's Page.
+
+
+FUTURE SCOPE:
+--------------
+The app has immense scope for future development,as is noted in the following:
+1)It can be used to authenticate doctor's using an Aadhar API,and hence making the access
+of illegal drugs even more difficult.
+2)The data from this app can be used with Machine Learning to suggest medicines a/c to patient queries 
+based on those suggested by doctor's on similar symptoms.
+3)the data from this app can used to research and measure popularity and effectiveness of 
+a particular drug amongst the target population.
+4)It can also be used to track the spread and extent of severity of a flu/disease based on the patient search 
+queries and doctor prescriptions.

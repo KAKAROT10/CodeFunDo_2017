@@ -1,0 +1,36 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="QRCodeReader.patientview"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="#FFF00A0A">
+        <TextBlock x:Name="Patient_Name" HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="260" FontSize="18" Height="65"/>
+        <TextBlock x:Name="date_field" HorizontalAlignment="Left" Margin="265,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" Height="65"/>
+        <Button x:Name="button" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-18,686,-20,-22" Width="518" Height="104" Click="button_Click"/>
+        <ScrollViewer Name="scrollvi" HorizontalAlignment="Left" Height="520" Margin="10,80,0,0" VerticalAlignment="Top" Width="460"/>
+        <Button x:Name="button1" Content="Extend Prescription" HorizontalAlignment="Left" Margin="-18,624,-20,0" VerticalAlignment="Top" Width="518" Height="90" Click="button1_Click"/>
+        <StackPanel Name="spp" HorizontalAlignment="Left" Height="74" Margin="10,550,0,0" VerticalAlignment="Top" Width="460">
+            <TextBox x:Name="textBox" Height="80" TextWrapping="Wrap"/>
+        </StackPanel>
+        <Grid Name="g" HorizontalAlignment="Left" Height="100" Margin="10,550,0,0" VerticalAlignment="Top" Width="460">
+            <Button x:Name="button2" Content="⋆" HorizontalAlignment="Left" VerticalAlignment="Top" Width="88" Height="100" Click="button2_Click"/>
+            <Button x:Name="button3" Content="⋆" HorizontalAlignment="Left" Margin="88,0,0,0" VerticalAlignment="Top" Width="96" Height="100" Click="button3_Click"/>
+            <Button x:Name="button4" Content="⋆" HorizontalAlignment="Left" Margin="184,0,0,0" VerticalAlignment="Top" Width="92" Height="100" Click="button4_Click"/>
+            <Button x:Name="button5" Content="⋆" HorizontalAlignment="Left" Margin="276,0,0,0" VerticalAlignment="Top" Width="90" Height="100" Click="button5_Click"/>
+            <Button x:Name="button6" Content="⋆" HorizontalAlignment="Left" Margin="371,0,0,0" VerticalAlignment="Top" Width="89" Height="100" Click="button6_Click"/>
+        </Grid>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>
